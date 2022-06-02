@@ -4,6 +4,7 @@ Projeto desenvolvido com base em um exercício proposto no curso JavaScript do I
 
 <img src="/github/images/demo.png" alt="demo"/>
 
+<a href="https://wesleygessner.github.io/calculadora_imc/">Demo</a>
 
 ## Tecnologias utilizadas
 
