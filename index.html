@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Calculadora IMC</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-auto mt-5 mb-2">
+        <h1>Calcule seu IMC de forma simples.</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <p>O índice de massa corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está no peso
+          ideal. Desenvolvido pelo polímata Lambert Quételet no fim do século XIX, trata-se de um método fácil e rápido
+          para a avaliação do nível de gordura de cada pessoa, sendo, por isso, um preditor internacional de obesidade
+          adotado pela Organização Mundial da Saúde (OMS).</p>
+
+        <div>
+          <h2>Como calcular o IMC</h2>
+          <p> O IMC é determinado pela divisão da massa do indivíduo pelo quadrado de sua altura, em que a massa está em
+            quilogramas e a altura em metros.</p>
+          <img src="./images/formula-imc.svg" alt="fórmula imc">
+        </div>
+      </div>
+      <div class="col-4">
+        <form>
+          <div class="form-group">
+            <label for="weight">Peso</label>
+            <input type="text" id="weight" placeholder="Digite seu peso..." class="form-control form-control-lg w-75"
+              aria-describedby="weightHelp">
+            <small id="weightHelp" class="form-text text-muted">Peso em Kg. Exemplo: 78.5</small>
+          </div>
+          <div class="form-group">
+            <label for="height">Altura</label>
+            <input type="text" id="height" placeholder="Digite sua altura..." class="form-control form-control-lg w-75"
+              aria-describedby="heightHelp">
+            <small id="heightHelp" class="form-text text-muted">Altura em metros. Exemplo: 1.90</small>
+          </div>
+
+          <button id="sortImc" class="btn btn-primary mt-2">Calcular IMC</button>
+        </form>
+
+        <div class="alert hidden mt-3 d-flex w-75" role="alert">
+          <button type="button" class="btn-close hidden" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <img src="./images/tabela-imc.png" alt="tabela imc" width="400px">
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
